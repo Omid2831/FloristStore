@@ -1,0 +1,32 @@
+export  const cardData = [
+    {
+        "id": "roses",
+        "title": "Roses",
+        "description": "Classic and seasonal roses"
+    },
+    {
+        "id": "bouquets",
+        "title": "Bouquets",
+        "description": "Curated floral bundles"
+    },
+    {
+        "id": "plants",
+        "title": "Plants",
+        "description": "Indoor and outdoor greens"
+    },
+    {
+        "id": "wedding",
+        "title": "Wedding",
+        "description": "Ceremony and reception florals"
+    },
+    {
+        "id": "sympathy",
+        "title": "Sympathy",
+        "description": "Thoughtful remembrance pieces"
+    },
+    {
+        "id": "gifts",
+        "title": "Gifts",
+        "description": "Flowers paired with extras"
+    }
+];
