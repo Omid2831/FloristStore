@@ -1,7 +1,7 @@
 import React from 'react'
-import RootLayout from './layout/RootLayout';
+import Homepage from './pages/Homepage';
 const App = () => {
-  return <RootLayout />;
+  return <Homepage />;
 }
 
 export default App
