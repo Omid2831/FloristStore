@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,9 +7,28 @@ import { Autoplay } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
 import { sliderData } from './SliderData';
-import SliderContext from './SliderContext'
+import SliderContext from './SliderContext';
+import { useState } from 'react';
 
 const Slider = () => {
+    // the url to fetch data from local file
+    const url = 'data/banners.json';
+        // 1. use state
+        const [data, SetData] = useState([]);
+        // 2. fetch data from local file
+        useEffect(() => {
+            const fetchData = async () => {
+                try{
+                    const res = await fetch(url);
+                    const jsonData = await res.json();
+                    SetData(jsonData);
+                    console.log('Slider Data:', jsonData);
+                }catch(error){
+                    console.error('Error fetching slider data:', error);
+                }
+            }
+            fetchData();
+        }, []);
     return (
         <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 border-4 border-dashed border-gray-300 py-12 px-8 gap-5'>
             <div className='flex justify-center items-center border-4 border-dashed border-gray-400 py-4 px-8 '>
@@ -26,8 +45,8 @@ const Slider = () => {
                 loop={true}
                 className='h-96 w-full shadow-md'
             >
-                {sliderData && sliderData.length > 0 ? (
-                    sliderData.map((slide) => (
+                {data && data.length > 0 ? (
+                    data.map((slide) => (
                         <SwiperSlide key={slide.id} className='w-full relative'>
                             <img
                                 src={slide.image}

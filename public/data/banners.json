@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=400&fit=crop",
+        "title": "Fresh Bouquets",
+        "subtitle": "Handcrafted with love daily"
+    },
+    {
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1487070183336-b863922373d4?w=800&h=400&fit=crop",
+        "title": "Wedding Flowers",
+        "subtitle": "Make your special day unforgettable"
+    },
+    {
+        "id": 3,
+        "image": "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=800&h=400&fit=crop",
+        "title": "Seasonal Arrangements",
+        "subtitle": "Beautiful blooms for every occasion"
+    },
+    {
+        "id": 4,
+        "image": "https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=800&h=400&fit=crop",
+        "title": "Gift Bouquets",
+        "subtitle": "Express your feelings with flowers"
+    },
+    {
+        "id": 5,
+        "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&h=400&fit=crop",
+        "title": "Tropical Blooms",
+        "subtitle": "Exotic flowers for unique style"
+    },
+    {
+        "id": 6,
+        "image": "https://images.unsplash.com/photo-1496062031456-07b8f162a322?w=800&h=400&fit=crop",
+        "title": "Custom Designs",
+        "subtitle": "Personalized floral creations"
+    }
+]
