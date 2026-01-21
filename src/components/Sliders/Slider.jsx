@@ -6,7 +6,6 @@ import { Autoplay } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
-import { sliderData } from './SliderData';
 import SliderContext from './SliderContext';
 import { useState } from 'react';
 
@@ -42,7 +41,7 @@ const Slider = () => {
                 autoplay={{
                     delay: 5000,
                 }}
-                loop={true}
+                loop={false}
                 className='h-96 w-full shadow-md'
             >
                 {data && data.length > 0 ? (
