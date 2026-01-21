@@ -2,7 +2,7 @@ import React from 'react'
 
 const SliderContext = () => {
     return (
-            <article className='flex flex-col gap-3'>
+            <article className='flex flex-col gap-4'>
                 <h2 className='text-white text-4xl font-extrabold leading-tight'>
                     Fresh Flowers, Thoughtfully Arranged
                 </h2>
