@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Header from '../components/Header'
 const RootLayout = ({ children }) => {
     return (
         <div className='min-h-screen flex flex-col overflow-y-hidden'>
